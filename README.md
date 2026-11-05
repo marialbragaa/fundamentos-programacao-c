@@ -1,53 +1,84 @@
 # Fundamentos de Programação em C
 
-Este repositório reúne alguns exercícios que fiz durante meus estudos iniciais de programação em C.
+Este repositório reúne exercícios desenvolvidos durante meus estudos de programação em C no curso de Engenharia de Robôs da Universidade Federal da Paraíba (UFPB).
 
-Estou cursando Engenharia de Robôs na UFPB e criei este repositório para guardar os códigos que estou desenvolvendo enquanto aprendo a linguagem e acompanhar minha evolução ao longo do curso.
+Organizo aqui atividades de sala e exercícios de prática para acompanhar minha evolução em lógica de programação e resolução de problemas.
 
-## Exercícios
+## Organização do repositório
 
-### `maior.c`
-Compara dois números inteiros e informa qual deles é o maior ou se os dois são iguais.
+| Local | Conteúdo |
+|---|---|
+| Arquivos na raiz | Exercícios iniciais com cálculos, condições e entrada e saída de dados |
+| `Vetores` | Operações com vetores, busca de elementos e comparação de valores |
+| `Matrizes` | Exercícios com dados organizados em linhas e colunas |
+| `Strings` | Contagem e análise de caracteres e palavras |
+| `BeeCrowd` | Exercícios baseados em problemas da plataforma Beecrowd, adaptados para execução interativa no terminal |
 
-### `media.c`
-Recebe três notas, armazena os valores em um vetor e calcula a média do aluno.
+## Exercícios iniciais
 
-### `situacao.c`
-Trabalha com notas utilizando vetor e estrutura de repetição `for`, calculando a média do aluno e verificando sua situação.
+| Arquivo | Descrição |
+|---|---|
+| `maior.c` | Compara dois números inteiros e informa o maior ou se são iguais. |
+| `media.c` | Armazena três notas em um vetor e calcula a média. |
+| `situacao.c` | Utiliza vetor e repetição para calcular a média e verificar a situação do aluno. |
+| `situacao2.c` | Considera notas e faltas para informar aprovação, prova final ou reprovação. |
+| `par_impar.c` e `par_impar2.c` | Verificam se um número inteiro é par ou ímpar. |
+| `calculadora.c` | Realiza adição, subtração, multiplicação e divisão. |
+| `pagamento.c` | Calcula o pagamento com base nas horas trabalhadas e no valor por hora. |
+| `fahrenheit.c` | Converte uma temperatura de Celsius para Fahrenheit. |
+| `imc.c` | Calcula o IMC e apresenta a classificação correspondente. |
+| `peso_ideal.c` | Aplica uma fórmula de estimativa de peso a partir da altura e do sexo informado. |
 
-### `situacao2.c`
-Uma versão mais completa do exercício de situação do aluno. Recebe três notas e a quantidade de faltas e informa se o aluno foi aprovado, ficou de prova final ou foi reprovado.
+## Vetores
 
-### `par_impar.c`
-Verifica se um número inteiro é par ou ímpar utilizando o operador `%`.
+- `acima_da_media.c`: calcula a média de cinco notas e indica quais estão acima, abaixo ou na média.
+- `maior_array.c`: busca o índice do maior elemento de um vetor.
+- `vetor_diferenca.c`: calcula a diferença entre os elementos correspondentes de dois vetores.
+- `vetor_inverso.c`: apresenta os elementos de um vetor em ordem inversa.
 
-### `par_impar2.c`
-Outra versão do exercício de par ou ímpar, mostrando diretamente o resultado para o usuário.
+## Matrizes
 
-### `calculadora.c`
-Calculadora simples que realiza adição, subtração, multiplicação e divisão de dois números.
+- `media_unidade.c`: armazena as notas de dez alunos em três unidades e calcula a média de cada unidade.
 
-### `pagamento.c`
-Calcula o valor a ser pago a partir da quantidade de horas trabalhadas e do valor recebido por hora.
+## Strings
 
-### `fahrenheit.c`
-Converte uma temperatura informada em Celsius para Fahrenheit.
+- `palindromo.c`: verifica se uma palavra é um palíndromo.
+- `tamanho_str.c`: conta os caracteres de um texto, desconsiderando a quebra de linha.
+- `vogais.c`: conta as vogais sem acento, maiúsculas e minúsculas, em um texto.
 
-### `imc.c`
-Calcula o IMC a partir do peso e da altura informados e mostra a classificação correspondente.
+## Exercícios Beecrowd
 
-### `peso_ideal.c`
-Calcula um peso ideal estimado a partir da altura e do sexo informado.
+| Arquivo | Atividade |
+|---|---|
+| `1172.c` | Substituição de valores não positivos em um vetor |
+| `1174.c` | Seleção de valores menores ou iguais a dez |
+| `1175.c` | Inversão dos elementos de um vetor |
+| `1176.c` | Cálculo de termos da sequência de Fibonacci |
+| `1180.c` | Busca do menor valor e de sua posição |
+| `1182.c` | Soma ou média dos elementos de uma coluna de matriz |
+| `1234.c` | Alternância entre letras maiúsculas e minúsculas |
+| `1241.c` | Verificação de correspondência entre o final de uma sequência e outra |
+| `1272.c` | Formação de uma mensagem com as primeiras letras das palavras |
+| `1435.c` | Preenchimento de uma matriz quadrada em camadas |
+
+Essas versões incluem mensagens para orientar a entrada de dados no terminal. Para submissão ao Beecrowd, é necessário adequar a entrada e a saída ao formato exigido por cada problema.
 
 ## O que estou praticando
 
-Até o momento, esses exercícios envolvem:
+- Variáveis e tipos de dados
+- Entrada e saída com `scanf`, `printf` e `fgets`
+- Operadores aritméticos, relacionais e lógicos
+- Estruturas condicionais
+- Estruturas de repetição
+- Vetores e matrizes
+- Manipulação de strings
+- Criação de funções e passagem de vetores como parâmetros
+- Uso de bibliotecas como `stdio.h`, `string.h` e `ctype.h`
 
-- variáveis e tipos de dados
-- entrada e saída com `scanf` e `printf`
-- operadores aritméticos e relacionais
-- estruturas condicionais com `if` e `else`
-- estruturas de repetição com `for`
-- vetores
+## Execução
 
-Pretendo continuar atualizando este repositório conforme for aprendendo novos conteúdos em C.
+Cada arquivo `.c` é um programa independente e possui sua própria função `main`. Para executar uma atividade, compile e rode apenas o arquivo correspondente em um ambiente com suporte à linguagem C.
+
+---
+
+Repositório em atualização conforme avanço nos estudos.
